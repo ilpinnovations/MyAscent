@@ -1,0 +1,107 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="Register"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="22sp"
+                    android:textStyle="normal" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+
+                    <EditText
+                        android:id="@+id/input_employeeid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Employee id"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp">
+
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name"
+                        android:inputType="textPersonName"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:prompt="@string/prompt" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp">
+
+                    <EditText
+                        android:id="@+id/input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email Id(Official)"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="Submit"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/calander"
+            android:title="Schedule" />
+
+        <item
+            android:id="@+id/nav_user_details"
+            android:icon="@drawable/user_image1"
+            android:title="User Details" />
+
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/information_image"
+            android:title="Information" />
+
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/rate_ic"
+            android:title="Rate us" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_image"
+            android:title="Logout" />
+    </group>
+
+
+</menu>
