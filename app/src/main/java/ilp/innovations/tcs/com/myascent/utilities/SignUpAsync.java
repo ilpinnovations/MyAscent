@@ -1,6 +1,7 @@
 package ilp.innovations.tcs.com.myascent.utilities;
 
 import android.content.Context;
+import android.graphics.Region;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -32,7 +33,9 @@ public class SignUpAsync extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... arg0) {
         try {
-            String link = "http://theinspirer.in/ascent?action=register&empId=" + arg0[0] + "&empName=" + arg0[1].replace(" ", "%20") + "&regionId=" + arg0[2] + "&emailId=" + arg0[3];
+            int regionId = RegionMapper.getRegionId(arg0[2]);
+            Log.i("myTag", "Region ID: " + regionId);
+            String link = "http://theinspirer.in/ascent?action=register&empId=" + arg0[0] + "&empName=" + arg0[1].replace(" ", "%20") + "&regionId=" + regionId + "&emailId=" + arg0[3];
             Log.d("myTag", link);
             URL url = new URL(link.trim().replace(" ", "xyzzyspoonshift1"));
             URLConnection conn = url.openConnection();

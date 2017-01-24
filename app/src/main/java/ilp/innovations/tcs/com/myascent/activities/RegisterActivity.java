@@ -86,7 +86,6 @@ public class RegisterActivity extends AppCompatActivity {
                                                    String empEmail = mEditText3.getText().toString().trim();
                                                    String location = (String) mSpinner.getSelectedItem();
 
-
                                                    final UserBean userBean = new UserBean();
                                                    userBean.setEmail(empEmail);
                                                    userBean.setUserName(empName);
